@@ -1,0 +1,43 @@
+//
+//  TomProject.pch
+//  TomProject
+//
+//  Created by JDBeer on 2017/10/19.
+//  Copyright © 2017年 zhongHui. All rights reserved.
+//
+
+
+
+#import <UIView+FrameEx.h>
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import "LCKNavigationController.h"
+#import <MBProgressHUD.h>
+#import "BaseViewController.h"
+#import "HttpTool.h"
+#import "StoreManagerHead.h"
+#import "URLHeader.h"
+#import "StoreManager.h"
+
+#define kColorBlackColor [UIColor blackColor]
+#define kColorWhiteColor [UIColor whiteColor]
+#define kColorClearColor [UIColor clearColor]
+#define kColorGrayColor [UIColor grayColor]
+#define KColorBlueColor [UIColor blueColor]
+#define KColorBackGroundColor RGBA(245,245,245,1)
+#define kColorCellSeparator RGBA(153,153,153,1)
+#define KColorCommonColor RGBA(227, 84, 23, 1)
+#define KColorTextColor RGBA(102,102,102,1)
+
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define rgb(r,g,b) [UIColor colorWithRed:r/255 green:g/255 blue:b/255 alpha:1.0]
+#define ImageNamed(a) [UIImage imageNamed:a]
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define AdaptWidth(a) SCREEN_WIDTH*a/375
+
+#define AdaptHeight(a) SCREEN_HEIGHT*a/667
+
+
+
