@@ -26,4 +26,17 @@
     return self;
 }
 
+- (CGRect)placeholderRectForBounds:(CGRect)bounds
+{
+    CGRect rect = [super textRectForBounds:UIEdgeInsetsInsetRect(bounds, UIEdgeInsetsMake(3, 5, 0, 0))];
+    return rect;
+}
+
+- (CGRect)leftViewRectForBounds:(CGRect)bounds
+{
+    CGRect recr = [super leftViewRectForBounds:bounds];
+    recr.origin.x +=10;
+    return recr;
+}
+
 @end

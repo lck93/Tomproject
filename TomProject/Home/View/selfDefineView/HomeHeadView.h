@@ -12,4 +12,6 @@
 
 - (void)setModelWithBannerArray:(NSArray *)bannerArray;
 
+@property(nonatomic,copy)void (^goodsViewBlock)(NSString *ID);
+
 @end

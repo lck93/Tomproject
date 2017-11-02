@@ -11,6 +11,7 @@
 		0D11411F1F99F86400949D66 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11411E1F99F86400949D66 /* ViewController2.m */; };
 		0D1141221F99F86D00949D66 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1141211F99F86D00949D66 /* ViewController3.m */; };
 		0D1141251F99F87700949D66 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1141241F99F87700949D66 /* ViewController4.m */; };
+		0D11CC391FAABC3C00BB684B /* GoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11CC381FAABC3C00BB684B /* GoodsViewController.m */; };
 		0D2625201FA9BF5800A91D58 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D26251F1FA9BF5800A91D58 /* SearchBar.m */; };
 		0D2871811F98748500C1B871 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2871801F98748500C1B871 /* AppDelegate.m */; };
 		0D2871841F98748500C1B871 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2871831F98748500C1B871 /* ViewController.m */; };
@@ -1088,6 +1089,11 @@
 		0D1141211F99F86D00949D66 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
 		0D1141231F99F87700949D66 /* ViewController4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
 		0D1141241F99F87700949D66 /* ViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
+		0D11CC371FAABC3C00BB684B /* GoodsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsViewController.h; sourceTree = "<group>"; };
+		0D11CC381FAABC3C00BB684B /* GoodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsViewController.m; sourceTree = "<group>"; };
+		0D11CC3B1FAAC28500BB684B /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
+		0D11CC3C1FAAC28500BB684B /* JSDropDownMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDropDownMenu.h; sourceTree = "<group>"; };
+		0D11CC3D1FAAC28500BB684B /* JSDropDownMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDropDownMenu.m; sourceTree = "<group>"; };
 		0D26251E1FA9BF5800A91D58 /* SearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
 		0D26251F1FA9BF5800A91D58 /* SearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
 		0D28717C1F98748500C1B871 /* TomProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2241,6 +2247,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0D11CC3A1FAAC28500BB684B /* JSDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0D11CC3B1FAAC28500BB684B /* ico_make.png */,
+				0D11CC3C1FAAC28500BB684B /* JSDropDownMenu.h */,
+				0D11CC3D1FAAC28500BB684B /* JSDropDownMenu.m */,
+			);
+			path = JSDropDownMenu;
+			sourceTree = "<group>";
+		};
 		0D26251D1FA9BF4800A91D58 /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -2396,6 +2412,8 @@
 			children = (
 				0D2871C41F9882E700C1B871 /* HomePageViewController.h */,
 				0D2871C51F9882E700C1B871 /* HomePageViewController.m */,
+				0D11CC371FAABC3C00BB684B /* GoodsViewController.h */,
+				0D11CC381FAABC3C00BB684B /* GoodsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -3821,6 +3839,7 @@
 		0D49EB6A1F99A60400360775 /* SelfDefine */ = {
 			isa = PBXGroup;
 			children = (
+				0D11CC3A1FAAC28500BB684B /* JSDropDownMenu */,
 				0D26251D1FA9BF4800A91D58 /* SearchBar */,
 				0D515FF51FA17C4600D9C5AD /* LNavigationBar.h */,
 				0D515FF41FA17C4600D9C5AD /* LNavigationBar.m */,
@@ -5184,6 +5203,7 @@
 				0D504F1A1FA035BF006370C8 /* GoodKindModel.m in Sources */,
 				0D504F041F9DC9FD006370C8 /* HttpTool.m in Sources */,
 				0D2625201FA9BF5800A91D58 /* SearchBar.m in Sources */,
+				0D11CC391FAABC3C00BB684B /* GoodsViewController.m in Sources */,
 				0D49EB751F99A62E00360775 /* LCKNavigationController.m in Sources */,
 				0D2871C61F9882E700C1B871 /* HomePageViewController.m in Sources */,
 				0D49EB7E1F99A6D500360775 /* PlusViewController.m in Sources */,

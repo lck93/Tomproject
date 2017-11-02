@@ -10,13 +10,14 @@
 #import <SDCycleScrollView.h>
 #import "HomePageGoodKindCollectionViewCell.h"
 #import "ADBannerModel.h"
+#import "GoodKindModel.h"
 @interface HomeHeadView()<SDCycleScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic,strong)SDCycleScrollView *sdCycleScrollView;
 
 @property(nonatomic,strong)UICollectionView *collectionView;
 
-@property(nonatomic,strong)NSArray *goodKindArray;
+@property(nonatomic,strong)NSArray<GoodKindModel *> *goodKindArray;
 
 @property(nonatomic,strong)NSArray *adBannerArray;
 
@@ -90,7 +91,9 @@
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    if (self.goodsViewBlock) {
+        self.goodsViewBlock(self.goodKindArray[indexPath.row].ID);
+    }
 }
 
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
