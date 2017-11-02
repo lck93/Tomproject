@@ -42,12 +42,12 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Documents/Tomproject/TomProject/Util/HttpTool.m"
-                  timestampString = "531283880.068129"
+                  timestampString = "531303629.708372"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
                   endingLineNumber = "69"
-                  offsetFromSymbolStart = "121">
+                  offsetFromSymbolStart = "120">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -57,12 +57,12 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Documents/Tomproject/TomProject/Util/HttpTool.m"
-                  timestampString = "531283880.07346"
+                  timestampString = "531303629.711629"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
                   endingLineNumber = "69"
-                  offsetFromSymbolStart = "42">
+                  offsetFromSymbolStart = "56">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -72,12 +72,12 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Documents/Tomproject/TomProject/Util/HttpTool.m"
-                  timestampString = "531283880.077919"
+                  timestampString = "531303629.715007"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
                   endingLineNumber = "69"
-                  offsetFromSymbolStart = "29">
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -105,7 +105,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TomProject/Home/Controller/HomePageViewController.m"
-            timestampString = "531283879.964411"
+            timestampString = "531303629.244523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
@@ -121,12 +121,12 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Documents/Tomproject/TomProject/Home/Controller/HomePageViewController.m"
-                  timestampString = "531283880.098399"
+                  timestampString = "531303629.730957"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "97"
                   endingLineNumber = "97"
-                  offsetFromSymbolStart = "66">
+                  offsetFromSymbolStart = "72">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -136,12 +136,12 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Documents/Tomproject/TomProject/Home/Controller/HomePageViewController.m"
-                  timestampString = "531283880.103724"
+                  timestampString = "531303629.734067"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "97"
                   endingLineNumber = "97"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -153,7 +153,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TomProject/Home/Controller/HomePageViewController.m"
-            timestampString = "531283879.964542"
+            timestampString = "531303629.26193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -169,12 +169,12 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Documents/Tomproject/TomProject/Home/Controller/HomePageViewController.m"
-                  timestampString = "531283880.114822"
+                  timestampString = "531303629.743621"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "90"
                   endingLineNumber = "90"
-                  offsetFromSymbolStart = "993">
+                  offsetFromSymbolStart = "972">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -184,14 +184,24 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Documents/Tomproject/TomProject/Home/Controller/HomePageViewController.m"
-                  timestampString = "531283880.117605"
+                  timestampString = "531303629.747334"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "90"
                   endingLineNumber = "90"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "24">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

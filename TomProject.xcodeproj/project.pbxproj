@@ -12,6 +12,9 @@
 		0D1141221F99F86D00949D66 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1141211F99F86D00949D66 /* ViewController3.m */; };
 		0D1141251F99F87700949D66 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1141241F99F87700949D66 /* ViewController4.m */; };
 		0D11CC391FAABC3C00BB684B /* GoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11CC381FAABC3C00BB684B /* GoodsViewController.m */; };
+		0D11CC3E1FAAC6ED00BB684B /* JSDropDownMenu.h in Sources */ = {isa = PBXBuildFile; fileRef = 0D11CC3C1FAAC28500BB684B /* JSDropDownMenu.h */; };
+		0D11CC3F1FAAC6ED00BB684B /* JSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11CC3D1FAAC28500BB684B /* JSDropDownMenu.m */; };
+		0D11CC401FAAC74200BB684B /* ico_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D11CC3B1FAAC28500BB684B /* ico_make.png */; };
 		0D2625201FA9BF5800A91D58 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D26251F1FA9BF5800A91D58 /* SearchBar.m */; };
 		0D2871811F98748500C1B871 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2871801F98748500C1B871 /* AppDelegate.m */; };
 		0D2871841F98748500C1B871 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2871831F98748500C1B871 /* ViewController.m */; };
@@ -4095,6 +4098,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D11CC401FAAC74200BB684B /* ico_make.png in Resources */,
 				0D49EB831F99D96E00360775 /* post_normal@2x.png in Resources */,
 				0D2875EF1F98A50A00C1B871 /* 1.pic_hd.jpg in Resources */,
 				0D2875F01F98A50A00C1B871 /* 111@2x.png in Resources */,
@@ -5185,6 +5189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D11CC3E1FAAC6ED00BB684B /* JSDropDownMenu.h in Sources */,
+				0D11CC3F1FAAC6ED00BB684B /* JSDropDownMenu.m in Sources */,
 				0D504F471FA0952D006370C8 /* HomePageGoodKindCollectionViewCell.h in Sources */,
 				0D504F481FA0952D006370C8 /* HomePageGoodKindCollectionViewCell.m in Sources */,
 				0D504F491FA0952D006370C8 /* HomePageGoodKindCollectionViewCell.xib in Sources */,

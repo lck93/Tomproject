@@ -107,8 +107,9 @@
     if (!_headView) {
         _headView = [[HomeHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, AdaptHeight(200)+140)];
         KWeakSelf;
-        _headView.goodsViewBlock = ^(NSString *ID) {
+        _headView.goodsViewBlock = ^(GoodKindModel *model) {
             GoodsViewController *control = [[GoodsViewController alloc] init];
+            control.model = model;
             [weakSelf.navigationController pushViewController:control animated:YES];
         };
     }

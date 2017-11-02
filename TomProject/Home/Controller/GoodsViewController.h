@@ -7,7 +7,8 @@
 //
 
 #import "BaseViewController.h"
+#import "GoodKindModel.h"
 
 @interface GoodsViewController : BaseViewController
-
+@property (nonatomic,strong)GoodKindModel *model;
 @end

@@ -92,7 +92,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (self.goodsViewBlock) {
-        self.goodsViewBlock(self.goodKindArray[indexPath.row].ID);
+        self.goodsViewBlock(self.goodKindArray[indexPath.row]);
     }
 }
 
