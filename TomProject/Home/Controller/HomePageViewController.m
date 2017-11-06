@@ -55,6 +55,12 @@
     self.tableView.tableHeaderView = self.headView;
     self.view.backgroundColor = [UIColor yellowColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        KWeakSelf;
+        [weakSelf.tableView.mj_header beginRefreshing];
+        [weakSelf requestData];
+        
+    }];
 }
 
 - (void)configNav
@@ -66,19 +72,16 @@
 
 - (void)requestData
 {
-    UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:window animated:YES];
     
-    hud.label.text = @"加载数据中";
-    hud.dimBackground = YES;
-     hud.removeFromSuperViewOnHide = YES;
+    [MBProgressHUD showMessageWithHUD:@"正在加载数据中" toView:self.view];
     [[HttpTool shareInstance] postWithURLString:Brand_List parameters:nil success:^(id response) {
         if ([response[@"status"] isEqualToString:@"1"]) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                hud.label.text = @"数据加载成功";
-                
-                [hud hideAnimated:YES afterDelay:2.0];
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+                [MBProgressHUD showSuccess:@"加载成功"];
+               
             });
+             [self.tableView.mj_header endRefreshing];
             self.adBannerArray = [ADBannerModel mj_objectArrayWithKeyValuesArray:response[@"data"][@"adbanner"]];
             
             self.brandListArray = [BrandListModel mj_objectArrayWithKeyValuesArray:response[@"data"][@"brandList"]];
@@ -88,15 +91,13 @@
             
         }else{
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                hud.label.text = @"数据加载失败";
-                [hud hideAnimated:YES];
+                 [self.tableView.mj_header endRefreshing];
             });
            
         }
     } fail:^(NSError *error) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            hud.label.text = @"网络错误";
-            [hud hideAnimated:YES];
+            [self.tableView.mj_header endRefreshing];
         });
        
     }];

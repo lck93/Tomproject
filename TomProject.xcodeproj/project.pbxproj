@@ -15,6 +15,10 @@
 		0D11CC3E1FAAC6ED00BB684B /* JSDropDownMenu.h in Sources */ = {isa = PBXBuildFile; fileRef = 0D11CC3C1FAAC28500BB684B /* JSDropDownMenu.h */; };
 		0D11CC3F1FAAC6ED00BB684B /* JSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D11CC3D1FAAC28500BB684B /* JSDropDownMenu.m */; };
 		0D11CC401FAAC74200BB684B /* ico_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D11CC3B1FAAC28500BB684B /* ico_make.png */; };
+		0D1A17501FB01125002678B5 /* MBProgressHUD+MJ.h in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A174D1FB00E34002678B5 /* MBProgressHUD+MJ.h */; };
+		0D1A17511FB01125002678B5 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A174E1FB00E34002678B5 /* MBProgressHUD+MJ.m */; };
+		0D1A17521FB01125002678B5 /* MBProgressHUD.bundle in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A174F1FB00E34002678B5 /* MBProgressHUD.bundle */; };
+		0D1A17561FB038B6002678B5 /* LCKRefreshHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A17551FB038B6002678B5 /* LCKRefreshHead.m */; };
 		0D2625201FA9BF5800A91D58 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D26251F1FA9BF5800A91D58 /* SearchBar.m */; };
 		0D2871811F98748500C1B871 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2871801F98748500C1B871 /* AppDelegate.m */; };
 		0D2871841F98748500C1B871 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2871831F98748500C1B871 /* ViewController.m */; };
@@ -1097,6 +1101,11 @@
 		0D11CC3B1FAAC28500BB684B /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
 		0D11CC3C1FAAC28500BB684B /* JSDropDownMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDropDownMenu.h; sourceTree = "<group>"; };
 		0D11CC3D1FAAC28500BB684B /* JSDropDownMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDropDownMenu.m; sourceTree = "<group>"; };
+		0D1A174D1FB00E34002678B5 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		0D1A174E1FB00E34002678B5 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		0D1A174F1FB00E34002678B5 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		0D1A17541FB038B6002678B5 /* LCKRefreshHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCKRefreshHead.h; sourceTree = "<group>"; };
+		0D1A17551FB038B6002678B5 /* LCKRefreshHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCKRefreshHead.m; sourceTree = "<group>"; };
 		0D26251E1FA9BF5800A91D58 /* SearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
 		0D26251F1FA9BF5800A91D58 /* SearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
 		0D28717C1F98748500C1B871 /* TomProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TomProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2258,6 +2267,25 @@
 				0D11CC3D1FAAC28500BB684B /* JSDropDownMenu.m */,
 			);
 			path = JSDropDownMenu;
+			sourceTree = "<group>";
+		};
+		0D1A174C1FB00E34002678B5 /* MBProgress */ = {
+			isa = PBXGroup;
+			children = (
+				0D1A174D1FB00E34002678B5 /* MBProgressHUD+MJ.h */,
+				0D1A174E1FB00E34002678B5 /* MBProgressHUD+MJ.m */,
+				0D1A174F1FB00E34002678B5 /* MBProgressHUD.bundle */,
+			);
+			path = MBProgress;
+			sourceTree = "<group>";
+		};
+		0D1A17531FB03892002678B5 /* MJHead */ = {
+			isa = PBXGroup;
+			children = (
+				0D1A17541FB038B6002678B5 /* LCKRefreshHead.h */,
+				0D1A17551FB038B6002678B5 /* LCKRefreshHead.m */,
+			);
+			path = MJHead;
 			sourceTree = "<group>";
 		};
 		0D26251D1FA9BF4800A91D58 /* SearchBar */ = {
@@ -3842,6 +3870,8 @@
 		0D49EB6A1F99A60400360775 /* SelfDefine */ = {
 			isa = PBXGroup;
 			children = (
+				0D1A17531FB03892002678B5 /* MJHead */,
+				0D1A174C1FB00E34002678B5 /* MBProgress */,
 				0D11CC3A1FAAC28500BB684B /* JSDropDownMenu */,
 				0D26251D1FA9BF4800A91D58 /* SearchBar */,
 				0D515FF51FA17C4600D9C5AD /* LNavigationBar.h */,
@@ -5155,9 +5185,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TomProject/Pods-TomProject-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -5189,6 +5222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1A17501FB01125002678B5 /* MBProgressHUD+MJ.h in Sources */,
+				0D1A17511FB01125002678B5 /* MBProgressHUD+MJ.m in Sources */,
+				0D1A17521FB01125002678B5 /* MBProgressHUD.bundle in Sources */,
 				0D11CC3E1FAAC6ED00BB684B /* JSDropDownMenu.h in Sources */,
 				0D11CC3F1FAAC6ED00BB684B /* JSDropDownMenu.m in Sources */,
 				0D504F471FA0952D006370C8 /* HomePageGoodKindCollectionViewCell.h in Sources */,
@@ -5224,6 +5260,7 @@
 				0D2871C31F9877E000C1B871 /* MainTabBarController.m in Sources */,
 				0D515FF61FA17C4600D9C5AD /* LNavigationBar.m in Sources */,
 				0D49EB811F99AB2600360775 /* LCKTabBar.m in Sources */,
+				0D1A17561FB038B6002678B5 /* LCKRefreshHead.m in Sources */,
 				0D504F1D1FA03632006370C8 /* BrandListModel.m in Sources */,
 				0D2871811F98748500C1B871 /* AppDelegate.m in Sources */,
 			);
