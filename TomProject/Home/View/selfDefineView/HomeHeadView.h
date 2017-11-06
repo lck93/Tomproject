@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GoodKindModel.h"
 
 @interface HomeHeadView : UIView
 
 - (void)setModelWithBannerArray:(NSArray *)bannerArray;
+
+@property(nonatomic,copy)void (^goodsViewBlock)(GoodKindModel *model);
 
 @end

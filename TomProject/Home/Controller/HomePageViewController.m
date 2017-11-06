@@ -13,6 +13,8 @@
 #import "HomeHeadView.h"
 #import "HomePageTableViewCell.h"
 #import "CNavigationBar.h"
+#import "SearchBar.h"
+#import "GoodsViewController.h"
 
 
 @interface HomePageViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -27,6 +29,7 @@
 
 @property(nonatomic,strong)CNavigationBar *cNavigationBar;
 
+@property(nonatomic,strong)SearchBar *searchBar;
 
 @end
 
@@ -57,7 +60,8 @@
 - (void)configNav
 {
     [self.view addSubview:self.cNavigationBar];
-    [self.cNavigationBar setBarAlpha:0.0];
+    self.cNavigationBar.backgroundColor = [UIColor clearColor];
+    [self.cNavigationBar setCustomView:self.searchBar withFrame:CGRectMake(54, 20, SCREEN_WIDTH-108, 30)];
 }
 
 - (void)requestData
@@ -102,6 +106,12 @@
 {
     if (!_headView) {
         _headView = [[HomeHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, AdaptHeight(200)+140)];
+        KWeakSelf;
+        _headView.goodsViewBlock = ^(GoodKindModel *model) {
+            GoodsViewController *control = [[GoodsViewController alloc] init];
+            control.model = model;
+            [weakSelf.navigationController pushViewController:control animated:YES];
+        };
     }
     return _headView;
 }
@@ -153,6 +163,14 @@
         
     }
     return _cNavigationBar;
+}
+
+- (SearchBar *)searchBar
+{
+    if (!_searchBar) {
+        _searchBar = [[SearchBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-108, 30)];
+    }
+    return _searchBar;
 }
 
 
