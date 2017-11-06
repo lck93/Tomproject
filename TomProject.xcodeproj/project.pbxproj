@@ -19,6 +19,7 @@
 		0D1A17511FB01125002678B5 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A174E1FB00E34002678B5 /* MBProgressHUD+MJ.m */; };
 		0D1A17521FB01125002678B5 /* MBProgressHUD.bundle in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A174F1FB00E34002678B5 /* MBProgressHUD.bundle */; };
 		0D1A17561FB038B6002678B5 /* LCKRefreshHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1A17551FB038B6002678B5 /* LCKRefreshHead.m */; };
+		0D1A17571FB05C90002678B5 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0D1A174F1FB00E34002678B5 /* MBProgressHUD.bundle */; };
 		0D2625201FA9BF5800A91D58 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D26251F1FA9BF5800A91D58 /* SearchBar.m */; };
 		0D2871811F98748500C1B871 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2871801F98748500C1B871 /* AppDelegate.m */; };
 		0D2871841F98748500C1B871 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2871831F98748500C1B871 /* ViewController.m */; };
@@ -4128,6 +4129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1A17571FB05C90002678B5 /* MBProgressHUD.bundle in Resources */,
 				0D11CC401FAAC74200BB684B /* ico_make.png in Resources */,
 				0D49EB831F99D96E00360775 /* post_normal@2x.png in Resources */,
 				0D2875EF1F98A50A00C1B871 /* 1.pic_hd.jpg in Resources */,

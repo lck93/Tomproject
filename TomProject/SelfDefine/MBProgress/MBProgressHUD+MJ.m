@@ -48,7 +48,7 @@
     hud.removeFromSuperViewOnHide = YES;
     // YES代表需要蒙版效果
     hud.dimBackground = YES;
-
+//    hud.bezelView.color = [UIColor blackColor];
     // 1秒之后再消失
     [hud hide:YES afterDelay:1.0];
     return hud;
@@ -68,7 +68,7 @@
     hud.removeFromSuperViewOnHide = YES;
     
     // 1秒之后再消失
-//    [hud hide:YES afterDelay:10.0];
+//    [hud hide:YES afterDelay:2.0];
     
     return hud;
 }
