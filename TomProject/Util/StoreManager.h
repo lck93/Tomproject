@@ -15,8 +15,12 @@
 + (void)saveToken:(NSString *)token;
 
 
+
+
 #pragma mark get
 +(NSString *)getToken;
+
++(NSString *)getUserId;
 
 
 @end

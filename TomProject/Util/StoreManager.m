@@ -9,16 +9,21 @@
 #import "StoreManager.h"
 
 @implementation StoreManager
-
+#pragma mark--save
 + (void)saveToken:(NSString *)token
 {
     [[NSUserDefaults standardUserDefaults] setObject:token forKey:TOKEN];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
+#pragma mark--get
 
 +(NSString *)getToken
 {
     return [[NSUserDefaults standardUserDefaults] objectForKey:TOKEN];
+}
++(NSString *)getUserId
+{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:USERID];
 }
 
 

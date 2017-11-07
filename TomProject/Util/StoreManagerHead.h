@@ -8,4 +8,5 @@
 
 
 #define TOKEN @"token"
+#define USERID @"userId"
 
