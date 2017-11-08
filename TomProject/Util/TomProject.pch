@@ -20,6 +20,7 @@
 #import "StoreManager.h"
 #import "MBProgressHUD+MJ.h"
 #import <MJRefresh.h>
+#import <LGAlertView.h>
 
 #define kColorBlackColor [UIColor blackColor]
 #define kColorWhiteColor [UIColor whiteColor]

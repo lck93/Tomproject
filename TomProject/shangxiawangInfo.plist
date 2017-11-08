@@ -18,7 +18,7 @@
 				</dict>
 				<dict>
 					<key>icon</key>
-					<string>icon_qudaitouxiang_qudaizhongxin</string>
+					<string>icon_quyudaili</string>
 					<key>detailNameLab</key>
 					<string></string>
 					<key>nameLab</key>
@@ -104,7 +104,7 @@
 				</dict>
 				<dict>
 					<key>icon</key>
-					<string>icon_juli</string>
+					<string>icon_shouhuodizhi</string>
 					<key>nameLab</key>
 					<string>我的收货地址</string>
 					<key>detailNameLab</key>

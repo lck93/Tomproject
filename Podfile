@@ -11,4 +11,5 @@ pod 'SDWebImage', '~> 4.0.0'
 pod 'MJExtension', '~> 3.0.13'
 pod 'MBProgressHUD', '~> 0.7'
  pod 'MJRefresh', '~> 3.1.12'
+ pod 'LGAlertView'
 end

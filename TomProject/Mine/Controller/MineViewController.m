@@ -9,7 +9,7 @@
 #import "MineViewController.h"
 #import "LNavigationBar.h"
 
-@interface MineViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface MineViewController ()<UITableViewDelegate,UITableViewDataSource,LGAlertViewDelegate>
 
 @property(nonatomic,strong)NSDictionary *unloginDic;
 
@@ -18,6 +18,8 @@
 @property(nonatomic,strong)UITableView *tableView;
 
 @property(nonatomic,strong)LNavigationBar *lNavigationBar;
+
+@property(nonatomic,strong)UIView *headView;
 
 @end
 
@@ -52,7 +54,7 @@
 -(UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-49)style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-49-64)style:UITableViewStyleGrouped];
         
         _tableView.delegate = self;
         _tableView.dataSource = self;
@@ -97,17 +99,43 @@
         }
         cell.imageView.image = ImageNamed(dic[@"icon"]);
         cell.textLabel.text = dic[@"nameLab"];
+        cell.textLabel.font = [UIFont systemFontOfSize:14.0];
         cell.detailTextLabel.text = dic[@"detailNameLab"];
+        cell.detailTextLabel.font = [UIFont systemFontOfSize:12.0];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         return cell;
     }
     return nil;
   
 }
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    if ([StoreManager getUserId]) {
+        
+    }else{
+        LGAlertView *alert = [[LGAlertView alloc] initWithTitle:@"显示错误信息" message:@"请登录" style:LGAlertViewStyleAlert buttonTitles:@[@"确认"] cancelButtonTitle:nil  destructiveButtonTitle:nil delegate:self];
+     
+        [alert showAnimated:YES completionHandler:^{
+            
+        }];
+    }
 }
+
+- (void)alertView:(LGAlertView *)alertView clickedButtonAtIndex:(NSUInteger)index title:(NSString *)title
+{
+   
+}
+
 
 - (NSDictionary *)unloginDic
 {
@@ -134,5 +162,10 @@
     }
     return _lNavigationBar;
 }
+
+//- (UIView *)headView
+//{
+//
+//}
 
 @end
