@@ -8,6 +8,7 @@
 
 #import "MineViewController.h"
 #import "LNavigationBar.h"
+#import "MineHeadView.h"
 
 @interface MineViewController ()<UITableViewDelegate,UITableViewDataSource,LGAlertViewDelegate>
 
@@ -19,7 +20,8 @@
 
 @property(nonatomic,strong)LNavigationBar *lNavigationBar;
 
-@property(nonatomic,strong)UIView *headView;
+@property(nonatomic,strong)MineHeadView *mineHeadView;
+
 
 @end
 
@@ -29,11 +31,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self configHeadView];
+    
     [self initTableView];
     
     [self configNav];
     
+    
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)configHeadView
+{
+//    [self.view addSubview:self.mineHeadView];
 }
 
 - (void)configNav
@@ -54,14 +65,23 @@
 -(UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-49-64)style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-49)style:UITableViewStyleGrouped];
         
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.sectionHeaderHeight =0.1;
+        _tableView.sectionFooterHeight = 10;
+//        _tableView.backgroundColor = KColorCommonColor;
         if (@available(iOS 11.0, *)) {
             _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;//UIScrollView也适用
         }else {
             self.automaticallyAdjustsScrollViewInsets = NO;
+        }
+        _tableView.tableHeaderView = self.mineHeadView;
+        if ([StoreManager getUserId]) {
+            
+        }else{
+            [self.mineHeadView hideUserNameLab];
         }
     }
     return _tableView;
@@ -118,6 +138,8 @@
         [cell setLayoutMargins:UIEdgeInsetsZero];
     }
 }
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([StoreManager getUserId]) {
@@ -130,6 +152,7 @@
         }];
     }
 }
+
 
 - (void)alertView:(LGAlertView *)alertView clickedButtonAtIndex:(NSUInteger)index title:(NSString *)title
 {
@@ -163,9 +186,17 @@
     return _lNavigationBar;
 }
 
-//- (UIView *)headView
-//{
-//
-//}
+- (MineHeadView *)mineHeadView
+{
+    if (!_mineHeadView) {
+        _mineHeadView = [[MineHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 154)];
+        KWeakSelf;
+        _mineHeadView.loginBlock = ^{
+//            weakSelf;
+        };
+    }
+    return _mineHeadView;
+}
+
 
 @end

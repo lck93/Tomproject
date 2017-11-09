@@ -1043,6 +1043,7 @@
 		0D2879E01F98A50F00C1B871 /* zheshangBank@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2875EC1F989A4300C1B871 /* zheshangBank@1x.png */; };
 		0D2879E11F98A50F00C1B871 /* zheshangBank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2875ED1F989A4300C1B871 /* zheshangBank@2x.png */; };
 		0D2879E21F98A50F00C1B871 /* zheshangBank@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2875EE1F989A4300C1B871 /* zheshangBank@3x.png */; };
+		0D486C4C1FB3FB7F004FC648 /* MineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D486C4B1FB3FB7F004FC648 /* MineHeadView.m */; };
 		0D49EB751F99A62E00360775 /* LCKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D49EB741F99A62E00360775 /* LCKNavigationController.m */; };
 		0D49EB781F99A6A600360775 /* MerchantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D49EB771F99A6A600360775 /* MerchantViewController.m */; };
 		0D49EB7E1F99A6D500360775 /* PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D49EB7D1F99A6D500360775 /* PlusViewController.m */; };
@@ -2144,6 +2145,8 @@
 		0D2875EC1F989A4300C1B871 /* zheshangBank@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zheshangBank@1x.png"; sourceTree = "<group>"; };
 		0D2875ED1F989A4300C1B871 /* zheshangBank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zheshangBank@2x.png"; sourceTree = "<group>"; };
 		0D2875EE1F989A4300C1B871 /* zheshangBank@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zheshangBank@3x.png"; sourceTree = "<group>"; };
+		0D486C4A1FB3FB7F004FC648 /* MineHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineHeadView.h; sourceTree = "<group>"; };
+		0D486C4B1FB3FB7F004FC648 /* MineHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineHeadView.m; sourceTree = "<group>"; };
 		0D49EB731F99A62E00360775 /* LCKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCKNavigationController.h; sourceTree = "<group>"; };
 		0D49EB741F99A62E00360775 /* LCKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCKNavigationController.m; sourceTree = "<group>"; };
 		0D49EB761F99A6A600360775 /* MerchantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MerchantViewController.h; sourceTree = "<group>"; };
@@ -2366,9 +2369,9 @@
 		0D2871B11F98750500C1B871 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				0D486C491FB3FB15004FC648 /* View */,
 				0D2871B21F98750500C1B871 /* Controller */,
 				0D2871B31F98750500C1B871 /* Model */,
-				0D2871B41F98750500C1B871 /* View */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -2387,13 +2390,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0D2871B41F98750500C1B871 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		0D2871B51F98750500C1B871 /* ShopCart */ = {
@@ -3868,6 +3864,15 @@
 			path = "银行图标";
 			sourceTree = "<group>";
 		};
+		0D486C491FB3FB15004FC648 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D486C4A1FB3FB7F004FC648 /* MineHeadView.h */,
+				0D486C4B1FB3FB7F004FC648 /* MineHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0D49EB6A1F99A60400360775 /* SelfDefine */ = {
 			isa = PBXGroup;
 			children = (
@@ -5225,6 +5230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D1A17501FB01125002678B5 /* MBProgressHUD+MJ.h in Sources */,
+				0D486C4C1FB3FB7F004FC648 /* MineHeadView.m in Sources */,
 				0D1A17511FB01125002678B5 /* MBProgressHUD+MJ.m in Sources */,
 				0D1A17521FB01125002678B5 /* MBProgressHUD.bundle in Sources */,
 				0D11CC3E1FAAC6ED00BB684B /* JSDropDownMenu.h in Sources */,
