@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TomProject/Util/HttpTool.m"
-            timestampString = "530617682.712109"
+            timestampString = "531988907.947683"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TomProject/Util/HttpTool.m"
-            timestampString = "530617682.718343"
+            timestampString = "531988907.94983"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
@@ -42,7 +42,7 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Desktop/Tomproject/TomProject/Util/HttpTool.m"
-                  timestampString = "531911847.126662"
+                  timestampString = "531989851.469068"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -57,7 +57,7 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Desktop/Tomproject/TomProject/Util/HttpTool.m"
-                  timestampString = "531911847.133558"
+                  timestampString = "531989851.472111"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -72,7 +72,7 @@
                   moduleName = "TomProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/190096877qq.com/Desktop/Tomproject/TomProject/Util/HttpTool.m"
-                  timestampString = "531911847.137428"
+                  timestampString = "531989851.477697"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -89,7 +89,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TomProject/Util/HttpTool.m"
-            timestampString = "530617682.719756"
+            timestampString = "531988907.949922"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
@@ -106,6 +106,22 @@
             continueAfterRunningActions = "No"
             scope = "0"
             stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TomProject/User/controller/LoginViewController.m"
+            timestampString = "531989851.243019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-loginClick:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

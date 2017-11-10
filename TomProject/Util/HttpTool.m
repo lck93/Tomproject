@@ -114,4 +114,23 @@ static HttpTool *_httpTool ;
     
 }
 
+- (void)getSaltWithPhoneNum:(NSString *)phoneNum success:(void (^)(id))successBlock fail:(void (^)(NSError *))failBlock
+{
+//    NSString *url = [NSString stringWithFormat:@"%@%@",Base_Url,string];
+//    [self.manager.requestSerializer setValue:[StoreManager getToken] forHTTPHeaderField:@"token"];
+//    [self.manager POST:url parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+//        
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        if ([responseObject[@"status"] isEqualToString:@"403"]) {
+//            [self refreshTokenSuccess:successBlock fail:failBlock];
+//        }else{
+//            successBlock(responseObject);
+//        }
+//        
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        failBlock(error);
+//    }];
+}
+
 @end

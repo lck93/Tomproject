@@ -17,5 +17,7 @@
 
 - (void)postWithURLString:(NSString *)string parameters:(id)parameters success:(void (^)(id response))successBlock fail:(void (^)(NSError *error))failBlock;
 
+- (void)getSaltWithPhoneNum:(NSString *)phoneNum success:(void (^)(id response))successBlock fail:(void (^)(NSError *error))failBlock;
+
 
 @end

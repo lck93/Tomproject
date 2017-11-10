@@ -9,6 +9,7 @@
 #import "MineViewController.h"
 #import "LNavigationBar.h"
 #import "MineHeadView.h"
+#import "LoginViewController.h"
 
 @interface MineViewController ()<UITableViewDelegate,UITableViewDataSource,LGAlertViewDelegate>
 
@@ -192,7 +193,8 @@
         _mineHeadView = [[MineHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 154)];
         KWeakSelf;
         _mineHeadView.loginBlock = ^{
-//            weakSelf;
+            LoginViewController *control = [[LoginViewController alloc] init];
+            [weakSelf.navigationController pushViewController:control animated:YES];
         };
     }
     return _mineHeadView;

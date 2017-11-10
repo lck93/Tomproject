@@ -1068,6 +1068,10 @@
 		0D504F4D1FA0952D006370C8 /* HomePageViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 0D2871C41F9882E700C1B871 /* HomePageViewController.h */; };
 		0D515FF61FA17C4600D9C5AD /* LNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D515FF41FA17C4600D9C5AD /* LNavigationBar.m */; };
 		0D515FFD1FA17C5E00D9C5AD /* CNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D515FFB1FA17C5E00D9C5AD /* CNavigationBar.m */; };
+		0D6332581FB54DCF00038F6D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6332561FB54DCF00038F6D /* LoginViewController.m */; };
+		0D6332591FB54DCF00038F6D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D6332571FB54DCF00038F6D /* LoginViewController.xib */; };
+		0D63325C1FB556D700038F6D /* 手机号@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D63325B1FB556C500038F6D /* 手机号@2x.png */; };
+		0D63325D1FB556E000038F6D /* 验证码@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D63325A1FB556C500038F6D /* 验证码@2x.png */; };
 		FD31D91701C23471D204E30A /* libPods-TomProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD1317619290C72225AC733 /* libPods-TomProject.a */; };
 /* End PBXBuildFile section */
 
@@ -2186,6 +2190,11 @@
 		0D515FF81FA17C5D00D9C5AD /* CNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNavigationBar.h; sourceTree = "<group>"; };
 		0D515FF91FA17C5D00D9C5AD /* CNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CNavigationBar.xib; sourceTree = "<group>"; };
 		0D515FFB1FA17C5E00D9C5AD /* CNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNavigationBar.m; sourceTree = "<group>"; };
+		0D6332551FB54DCF00038F6D /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0D6332561FB54DCF00038F6D /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0D6332571FB54DCF00038F6D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		0D63325A1FB556C500038F6D /* 验证码@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "验证码@2x.png"; sourceTree = "<group>"; };
+		0D63325B1FB556C500038F6D /* 手机号@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "手机号@2x.png"; sourceTree = "<group>"; };
 		7874E707418041373CBC9A20 /* Pods-TomProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TomProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TomProject/Pods-TomProject.debug.xcconfig"; sourceTree = "<group>"; };
 		FDD1317619290C72225AC733 /* libPods-TomProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TomProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -2326,6 +2335,7 @@
 		0D28717E1F98748500C1B871 /* TomProject */ = {
 			isa = PBXGroup;
 			children = (
+				0D6332511FB54D0E00038F6D /* User */,
 				0D504F011F9DC9E6006370C8 /* Util */,
 				0D1141161F99F84000949D66 /* Test */,
 				0D49EB6F1F99A60500360775 /* Merchant */,
@@ -2495,6 +2505,8 @@
 		0D2871CE1F989A4200C1B871 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				0D63325B1FB556C500038F6D /* 手机号@2x.png */,
+				0D63325A1FB556C500038F6D /* 验证码@2x.png */,
 				0D49EB821F99C67200360775 /* post_normal@2x.png */,
 				0D2871CF1F989A4200C1B871 /* 1.pic_hd.jpg */,
 				0D2871D01F989A4200C1B871 /* 111@2x.png */,
@@ -4016,6 +4028,40 @@
 			path = tableviewCell;
 			sourceTree = "<group>";
 		};
+		0D6332511FB54D0E00038F6D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0D6332521FB54D0E00038F6D /* controller */,
+				0D6332531FB54D0E00038F6D /* model */,
+				0D6332541FB54D0E00038F6D /* view */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		0D6332521FB54D0E00038F6D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D6332551FB54DCF00038F6D /* LoginViewController.h */,
+				0D6332561FB54DCF00038F6D /* LoginViewController.m */,
+				0D6332571FB54DCF00038F6D /* LoginViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		0D6332531FB54D0E00038F6D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		0D6332541FB54D0E00038F6D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		D93514A81C7DEF347B433FD9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -4134,6 +4180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D63325D1FB556E000038F6D /* 验证码@2x.png in Resources */,
+				0D63325C1FB556D700038F6D /* 手机号@2x.png in Resources */,
 				0D1A17571FB05C90002678B5 /* MBProgressHUD.bundle in Resources */,
 				0D11CC401FAAC74200BB684B /* ico_make.png in Resources */,
 				0D49EB831F99D96E00360775 /* post_normal@2x.png in Resources */,
@@ -5010,6 +5058,7 @@
 				0D2879541F98A50E00C1B871 /* button_go@1x.png in Resources */,
 				0D2879551F98A50E00C1B871 /* button_go@2x.png in Resources */,
 				0D2879561F98A50E00C1B871 /* button_go@3x.png in Resources */,
+				0D6332591FB54DCF00038F6D /* LoginViewController.xib in Resources */,
 				0D2879571F98A50E00C1B871 /* zhifuweixin@1x.png in Resources */,
 				0D2879581F98A50E00C1B871 /* zhifuweixin@2x.png in Resources */,
 				0D2879591F98A50E00C1B871 /* zhifuweixin@3x.png in Resources */,
@@ -5249,6 +5298,7 @@
 				0D504F281FA03FD6006370C8 /* BaseViewController.m in Sources */,
 				0D11411F1F99F86400949D66 /* ViewController2.m in Sources */,
 				0D504F171FA0354B006370C8 /* ADBannerModel.m in Sources */,
+				0D6332581FB54DCF00038F6D /* LoginViewController.m in Sources */,
 				0D28718F1F98748500C1B871 /* main.m in Sources */,
 				0D504F1A1FA035BF006370C8 /* GoodKindModel.m in Sources */,
 				0D504F041F9DC9FD006370C8 /* HttpTool.m in Sources */,
